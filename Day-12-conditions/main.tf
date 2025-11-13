@@ -44,7 +44,7 @@ variable "environment" {
 
 resource "aws_instance" "example" {
   count         = var.environment == "prod" ? 3 : 1
-  ami           = "ami-123456"
+  ami           = "ami-0cae6d6fe6048ca2c"
   instance_type = "t3.micro"
 
   tags = {

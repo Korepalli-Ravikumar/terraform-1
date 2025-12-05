@@ -12,12 +12,12 @@ sudo yum install java-17-amazon-corretto.x86_64
 
 
 #------------jenkins install-------------
+
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
-
 
 # ------------------install terraform ------------------
 
@@ -49,9 +49,9 @@ sudo mv /tmp/eksctl /usr/local/bin
 sudo rpm -ivh https://github.com/aquasecurity/trivy/releases/download/v0.48.3/trivy_0.48.3_Linux-64bit.rpm
 
 #----------------------sonarQube install-----------------------------------
-sudo yum -y install wget nfs-utils
-sudo wget -O /etc/yum.repos.d/sonar.repo http://downloads.sourceforge.net/project/sonar-pkg/rpm/sonar.repo
-sudo yum -y install sonar
+sudo yum -y install ar.repo http://downloads.sourceforge.net/project/sonar-pkg/rpm/sonar.repo
+sudo yum -y install sonarwget nfs-utils
+sudo wget -O /etc/yum.repos.d/son
 #-----------------------JFROg-----------------------------
 sudo wget https://releases.jfrog.io/artifactory/artifactory-rpms/artifactory-rpms.repo -O jfrog-artifactory-rpms.repo;
 
